@@ -1,0 +1,39 @@
+[camera]
+index = 0
+width = 640
+height = 480
+mirrored = true
+
+[cursor]
+sensitivity = 1.5
+smoothing = 0.7
+# Bounds for mapping camera frame to screen (normalized 0.0 to 1.0)
+# x_min, y_min, x_max, y_max
+bounds = [0.2, 0.2, 0.8, 0.8]
+freeze_on_click = true
+stabilization_threshold = 0.01
+
+[gestures]
+pinch_activation_threshold = 0.32
+pinch_release_threshold = 0.45
+click_stability_duration = 0.08
+double_click_window = 0.4
+drag_hold_duration = 0.3
+zoom_cooldown = 0.6
+right_click_stability_duration = 0.2
+scroll_activation_threshold = 0.06
+scroll_speed = 20
+
+[system]
+control_mode = "two_hand"
+startup_stabilization_time = 1.0
+tracking_loss_timeout = 2.0
+preview_enabled = true
+debug_logging = true
+tray_icon = false
+
+[keyboard]
+pause_resume = "f8"
+emergency_stop = "esc"
+toggle_preview = "f9"
+toggle_control_mode = "f10"
